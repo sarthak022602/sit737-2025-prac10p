@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  node-app:
+    build: .
+    container_name: sit737-node-service
+    ports:
+      - "3007:3007"
+    environment:
+      - PORT=3007
